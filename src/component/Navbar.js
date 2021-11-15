@@ -1,5 +1,5 @@
 import React from 'react';
-
+//navbar
 const Navbar = () => {
 	return (
 		<div className="w-11/12 mx-auto pt-10">
