@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AnalyticsChart from './component/AnalyticsChart'
+import ListOfStats from './component/ListOfStats'
+import Navbar from './component/Navbar'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//app is lifting the stats,chart and navbar state 
+const App = () => {
+	return (
+		<div className="font-inter bg-gray-900 min-h-screen pb-36">
+			<Navbar />
+			<div
+				className="w-full flex items-center justify-center flex-col xl:flex-row mt-20"
+				style={{
+					minHeight: '70vh',
+				}}
+			>
+				<ListOfStats />
+				<AnalyticsChart />
+			</div>
+		</div>
+	);
+};
 
 export default App;
