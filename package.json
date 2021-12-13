@@ -2,7 +2,7 @@
   "name": "covid-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luispozo94.github.io/covid-tracker",
+  "homepage": "https://luispozo94.github.io/covid-tracker/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
